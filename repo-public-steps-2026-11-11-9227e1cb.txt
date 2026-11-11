@@ -1,0 +1,57 @@
+MAKE THE REPO PUBLIC - CLICK-LEVEL STEPS (github.com, about 10 minutes)
+Do these in order. Content first, public flip LAST.
+
+Files you need (attached alongside this guide):
+  1. LICENSE-mit.txt
+  2. README-ROOT.md
+  3. README-NESTED.md
+
+STEP 1 - Add the MIT licence at the top level
+  1. Open https://github.com/sunenterprisesed-hub/paypal-evidence-assistant
+  2. Click "Add file" (top right of the file list) > "Create new file".
+  3. In the filename box type exactly: LICENSE
+  4. Open LICENSE-mit.txt, copy ALL of its text, paste it into the editor.
+  5. Click the green "Commit changes" button, then "Commit changes" again.
+
+STEP 2 - Add the top-level README so judges see the setup immediately
+  1. Back on the repo page, "Add file" > "Create new file".
+  2. Filename box: README.md
+  3. Copy ALL of README-ROOT.md, paste it in.
+  4. "Commit changes" twice.
+
+STEP 3 - Update the README inside the source folder (so both copies agree)
+  1. Click into the "paypal-evidence-assistant" folder, then click README.md.
+  2. Click the pencil icon (Edit this file).
+  3. Select all the old text (Ctrl+A) and delete it.
+  4. Copy ALL of README-NESTED.md, paste it in.
+  5. "Commit changes" twice.
+
+STEP 4 - Fix the repository description (it currently mentions unfreezing money,
+         which the app does not do)
+  1. On the repo main page, click the gear icon next to "About" (top right).
+  2. Replace the description with:
+     AI-assisted evidence preparation for PayPal seller disputes. Sandbox demo; submission to PayPal is disabled by design.
+  3. Save.
+
+STEP 5 - Make the repository public (LAST step)
+  1. Click "Settings" (top bar of the repo page).
+  2. Scroll to the very bottom, "Danger Zone" > "Change repository visibility".
+  3. Choose "Make public" and follow GitHub's confirmation prompt
+     (it asks you to type the repo name).
+
+AFTER IT IS PUBLIC
+  - GitHub should show "MIT license" in the About box. That is what the
+    hackathon rules check for.
+  - Send me the link and I will verify what a visitor sees.
+
+NOTES
+  - Before writing this guide I scanned the full current repository contents
+    (all 41 files: source, docs, tests, fixtures) for keys, tokens, passwords,
+    email addresses and runtime data. Found only placeholder test values
+    (fake tokens like 'tok-1' and mock client secrets in the test suite) -
+    no real credentials, no .env file, no database, no uploaded documents.
+  - One limit, honestly: I could review the CURRENT files only. The access I
+    have cannot read the repository's commit history. If you ever committed a
+    secret and later deleted it, tell me BEFORE Step 5 so we can check.
+  - Keep it that way: never upload a file called .env or the data/ folder.
+  - These steps change only GitHub. Nothing is submitted to the hackathon yet.
