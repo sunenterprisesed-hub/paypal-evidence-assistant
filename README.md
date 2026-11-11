@@ -1,3 +1,10 @@
+# PayPal Dispute AI Evidence Assistant
+
+The application source is inside the `paypal-evidence-assistant/` folder. Run `cd paypal-evidence-assistant` before the commands below.
+
+For the zero-configuration demo, no API keys are needed. Optional integration settings are documented in `.env.example` at the repository top level. From inside the application folder, copy it with `cp ../.env.example .env`, edit the values, then export them into the environment before starting. The app does not automatically load `.env` files. Never commit `.env` or API keys.
+
+---
 # Dispute Evidence Assistant
 
 A single-admin web application for preparing evidence for PayPal seller disputes.
