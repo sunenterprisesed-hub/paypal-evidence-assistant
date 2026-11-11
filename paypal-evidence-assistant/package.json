@@ -1,0 +1,16 @@
+{
+  "name": "paypal-dispute-evidence-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-assisted evidence preparation for PayPal seller disputes. Prepares, checks and explains evidence; the seller reviews and submits. Not a funds-release tool.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "demo": "APP_ENV=development node src/server.js"
+  },
+  "license": "UNLICENSED"
+}

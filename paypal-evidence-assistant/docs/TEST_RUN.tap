@@ -1,0 +1,292 @@
+TAP version 13
+# Subtest: AI cannot substitute identity documents for fulfilment even with valid file IDs
+ok 1 - AI cannot substitute identity documents for fulfilment even with valid file IDs
+  ---
+  duration_ms: 3.06361
+  type: 'test'
+  ...
+# Subtest: AI schema rejects unknown IDs, non-string suggestions and duplicate mappings
+ok 2 - AI schema rejects unknown IDs, non-string suggestions and duplicate mappings
+  ---
+  duration_ms: 0.438701
+  type: 'test'
+  ...
+# (node:4862) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: full dispute evidence workflow in demo mode
+ok 3 - full dispute evidence workflow in demo mode
+  ---
+  duration_ms: 168.373107
+  type: 'test'
+  ...
+# Subtest: exports are read-only and source changes invalidate reviewed report snapshots
+ok 4 - exports are read-only and source changes invalidate reviewed report snapshots
+  ---
+  duration_ms: 81.829738
+  type: 'test'
+  ...
+# Subtest: real PDF and PNG uploads extract text through the HTTP workflow
+ok 5 - real PDF and PNG uploads extract text through the HTTP workflow
+  ---
+  duration_ms: 456.72452
+  type: 'test'
+  ...
+# Subtest: isolated PDF extraction reads actual synthetic document text
+ok 6 - isolated PDF extraction reads actual synthetic document text
+  ---
+  duration_ms: 8.976616
+  type: 'test'
+  ...
+# Subtest: isolated image OCR reads actual synthetic confirmation text
+ok 7 - isolated image OCR reads actual synthetic confirmation text
+  ---
+  duration_ms: 354.822929
+  type: 'test'
+  ...
+# Subtest: malformed binaries fail closed instead of becoming labelled proof
+ok 8 - malformed binaries fail closed instead of becoming labelled proof
+  ---
+  duration_ms: 7.367664
+  type: 'test'
+  ...
+# Subtest: scanned PDF uses isolated first-three-page OCR fallback
+ok 9 - scanned PDF uses isolated first-three-page OCR fallback
+  ---
+  duration_ms: 365.530651
+  type: 'test'
+  ...
+# Subtest: actual parser isolation preflight hides application/home paths and environment
+ok 10 - actual parser isolation preflight hides application/home paths and environment
+  ---
+  duration_ms: 4.325667
+  type: 'test'
+  ...
+# (node:4929) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: identifier cites actual text and never uses filename or invented excerpts
+ok 11 - identifier cites actual text and never uses filename or invented excerpts
+  ---
+  duration_ms: 1.686648
+  type: 'test'
+  ...
+# Subtest: identity-type signals stay separate even when text asks for a substitution
+ok 12 - identity-type signals stay separate even when text asks for a substitution
+  ---
+  duration_ms: 0.557591
+  type: 'test'
+  ...
+# Subtest: ambiguous documents expose candidates without changing the seller label
+ok 13 - ambiguous documents expose candidates without changing the seller label
+  ---
+  duration_ms: 0.114426
+  type: 'test'
+  ...
+# Subtest: upload without a kind stays other until authenticated CSRF-protected confirmation
+ok 14 - upload without a kind stays other until authenticated CSRF-protected confirmation
+  ---
+  duration_ms: 123.099776
+  type: 'test'
+  ...
+# Subtest: token is fetched once and cached across calls
+ok 15 - token is fetched once and cached across calls
+  ---
+  duration_ms: 1.088731
+  type: 'test'
+  ...
+# Subtest: auth failure produces a credential/enablement hint, never the secret
+ok 16 - auth failure produces a credential/enablement hint, never the secret
+  ---
+  duration_ms: 1.076622
+  type: 'test'
+  ...
+# Subtest: dispute id format is validated before any network call
+ok 17 - dispute id format is validated before any network call
+  ---
+  duration_ms: 0.217128
+  type: 'test'
+  ...
+# Subtest: development transport sends multipart JSON and actual attachment bytes
+ok 18 - development transport sends multipart JSON and actual attachment bytes
+  ---
+  duration_ms: 13.847532
+  type: 'test'
+  ...
+# Subtest: provideEvidence rejects empty evidence and bad ids
+ok 19 - provideEvidence rejects empty evidence and bad ids
+  ---
+  duration_ms: 0.226986
+  type: 'test'
+  ...
+# Subtest: normalizeDispute tolerates partial payloads
+ok 20 - normalizeDispute tolerates partial payloads
+  ---
+  duration_ms: 0.227802
+  type: 'test'
+  ...
+# (node:4945) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: auth, CSRF, sessions and rate limiting
+ok 21 - auth, CSRF, sessions and rate limiting
+  ---
+  duration_ms: 260.301181
+  type: 'test'
+  ...
+# Subtest: upload validation rejects dangerous files
+ok 22 - upload validation rejects dangerous files
+  ---
+  duration_ms: 90.333774
+  type: 'test'
+  ...
+# Subtest: security headers, body limits and error hygiene
+ok 23 - security headers, body limits and error hygiene
+  ---
+  duration_ms: 76.841914
+  type: 'test'
+  ...
+# Subtest: demo disputes are clearly labelled and login page carries the synthetic-data notice
+ok 24 - demo disputes are clearly labelled and login page carries the synthetic-data notice
+  ---
+  duration_ms: 65.646274
+  type: 'test'
+  ...
+# Subtest: malformed percent-encoded cookies do not crash the server
+ok 25 - malformed percent-encoded cookies do not crash the server
+  ---
+  duration_ms: 42.791249
+  type: 'test'
+  ...
+# Subtest: session store holds digests, secret rotation rejects old tokens, expiry is purged
+ok 26 - session store holds digests, secret rotation rejects old tokens, expiry is purged
+  ---
+  duration_ms: 94.654425
+  type: 'test'
+  ...
+# Subtest: concurrent session count is bounded for the single-admin login
+ok 27 - concurrent session count is bounded for the single-admin login
+  ---
+  duration_ms: 41.552545
+  type: 'test'
+  ...
+# Subtest: esc neutralises markup, quotes and ampersands
+ok 28 - esc neutralises markup, quotes and ampersands
+  ---
+  duration_ms: 0.683153
+  type: 'test'
+  ...
+# Subtest: scrypt hash verifies correct password and rejects wrong ones
+ok 29 - scrypt hash verifies correct password and rejects wrong ones
+  ---
+  duration_ms: 94.038742
+  type: 'test'
+  ...
+# Subtest: csrfTokenMatches is strict about length and value
+ok 30 - csrfTokenMatches is strict about length and value
+  ---
+  duration_ms: 0.242747
+  type: 'test'
+  ...
+# Subtest: production refuses to boot without secrets
+ok 31 - production refuses to boot without secrets
+  ---
+  duration_ms: 0.800471
+  type: 'test'
+  ...
+# Subtest: production refuses weak/default admin password and short session secret
+ok 32 - production refuses weak/default admin password and short session secret
+  ---
+  duration_ms: 0.186236
+  type: 'test'
+  ...
+# Subtest: live PayPal env is rejected; sandbox passes with both credentials
+ok 33 - live PayPal env is rejected; sandbox passes with both credentials
+  ---
+  duration_ms: 0.331722
+  type: 'test'
+  ...
+# Subtest: AI provider requires https base URL and full settings
+ok 34 - AI provider requires https base URL and full settings
+  ---
+  duration_ms: 0.281011
+  type: 'test'
+  ...
+# Subtest: requirements matrix covers all documented PayPal dispute reasons
+ok 35 - requirements matrix covers all documented PayPal dispute reasons
+  ---
+  duration_ms: 0.332763
+  type: 'test'
+  ...
+# Subtest: every slot kind is a known evidence kind
+ok 36 - every slot kind is a known evidence kind
+  ---
+  duration_ms: 0.414391
+  type: 'test'
+  ...
+# Subtest: heuristic engine maps declared kinds to required slots and reports gaps
+ok 37 - heuristic engine maps declared kinds to required slots and reports gaps
+  ---
+  duration_ms: 1.539048
+  type: 'test'
+  ...
+# Subtest: candidate anyOf groups mark sibling slots as alternative, not missing
+ok 38 - candidate anyOf groups mark sibling slots as alternative, not missing
+  ---
+  duration_ms: 0.472312
+  type: 'test'
+  ...
+# Subtest: heuristic engine warns on declared-kind mismatch and never reclassifies
+ok 39 - heuristic engine warns on declared-kind mismatch and never reclassifies
+  ---
+  duration_ms: 0.16573
+  type: 'test'
+  ...
+# Subtest: freelancer statement triggers identity-vs-business-evidence reminder
+ok 40 - freelancer statement triggers identity-vs-business-evidence reminder
+  ---
+  duration_ms: 0.147214
+  type: 'test'
+  ...
+# Subtest: report contains case facts, gaps and the outcome disclaimer
+ok 41 - report contains case facts, gaps and the outcome disclaimer
+  ---
+  duration_ms: 0.266403
+  type: 'test'
+  ...
+# Subtest: evidence payload uses covered evidence kinds and never invents data
+ok 42 - evidence payload uses covered evidence kinds and never invents data
+  ---
+  duration_ms: 0.498629
+  type: 'test'
+  ...
+# Subtest: evidence payload maps real analyzer candidate output to the right group and type
+ok 43 - evidence payload maps real analyzer candidate output to the right group and type
+  ---
+  duration_ms: 0.246705
+  type: 'test'
+  ...
+# Subtest: recipes labelled refund and unread binary labels never become evidence candidates
+ok 44 - recipes labelled refund and unread binary labels never become evidence candidates
+  ---
+  duration_ms: 0.361516
+  type: 'test'
+  ...
+# Subtest: actual PayPal seller requests override generic reason suggestions
+ok 45 - actual PayPal seller requests override generic reason suggestions
+  ---
+  duration_ms: 0.18891
+  type: 'test'
+  ...
+# Subtest: unknown case-request evidence types stay unresolved, not generic fallback
+ok 46 - unknown case-request evidence types stay unresolved, not generic fallback
+  ---
+  duration_ms: 0.11
+  type: 'test'
+  ...
+1..46
+# tests 46
+# suites 0
+# pass 46
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2688.764562
