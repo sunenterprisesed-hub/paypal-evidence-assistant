@@ -1,18 +1,3 @@
-# PayPal Dispute AI Evidence Assistant
-
-The application source lives in the `paypal-evidence-assistant/` folder. The
-environment template `.env.example` sits at the repository root, next to this
-README. To run the app:
-
-```sh
-cd paypal-evidence-assistant
-cp ../.env.example .env   # fill in values, then EXPORT them - the app never loads .env itself
-```
-
-Everything below assumes you are inside that folder.
-
----
-
 # Dispute Evidence Assistant
 
 A single-admin web application for preparing evidence for PayPal seller disputes.
@@ -47,8 +32,7 @@ Use synthetic documents only. A missing/unusable extraction sandbox produces a
 visible extraction failure, not an unsafe parser fallback. Platform deployment
 and handling of real confidential documents are not approved or verified yet.
 
-`.env.example` documents settings (it lives at the repository root, one level
-up from the source folder). Environment variables must be exported by the
+`.env.example` documents settings. Environment variables must be exported by the
 process manager or shell; this build does not automatically load `.env` files.
 Production refuses development credentials and requires a strong session secret.
 Never commit credentials or paste them into chat.
@@ -119,10 +103,8 @@ withdrawable balances or pretend that dispute status is an account review status
 - `src/services/reportBuilder.js`: reviewable evidence report
 - `test/`: unit, HTTP workflow, security, extraction and mocked adapter regressions
 
-See [SECURITY.md](paypal-evidence-assistant/SECURITY.md),
-[docs/TEST_EVIDENCE.md](paypal-evidence-assistant/docs/TEST_EVIDENCE.md),
-[docs/TEST_RUN.tap](paypal-evidence-assistant/docs/TEST_RUN.tap) and
-[docs/DEPLOYMENT.md](paypal-evidence-assistant/docs/DEPLOYMENT.md). This build passed an independent review covering its 46
+See `SECURITY.md`, `docs/TEST_EVIDENCE.md`, `docs/TEST_RUN.tap`, and
+`docs/DEPLOYMENT.md`. This build passed an independent review covering its 46
 automated tests and 16 targeted security probes. Passing tests and probes are
 not a zero-vulnerability guarantee or a production approval.
 
